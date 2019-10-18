@@ -1,0 +1,34 @@
+body {
+  background: darkgrey;
+}
+
+.zindex2 {
+  z-index: 2;
+}
+
+.zindex3 {
+  z-index: 3;
+}
+
+.zindex1 {
+  z-index: 1;
+}
+
+.tl200 {
+  top: 200px;
+  left: 200px;
+}
+
+.tl1400 {
+  top: 200px;
+  left: 1400px;
+}
+
+.city {
+  position: relative;
+}
+
+.clock {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
