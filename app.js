@@ -27,7 +27,7 @@ let secondsFunc = () => {
     clockH.style.transform = 'rotate(' + degH + 'deg)';
 }
 
-setInterval(secondsFunc(), 10);
+setInterval(secondsFunc, 10);
 
 let clockSecondsNY = document.getElementById('clockSecondsNY');
 let clockMinutesNY = document.getElementById('clockMinutesNY');
@@ -45,7 +45,7 @@ clockSecondsNY.animate([
 });
 
 clockMinutesNY.animate([
-    {transform: 'rotate(' + mDegFirst + 'deg)', offset: 0}, 
+    {transform: 'rotate(' + mDegFirst + 'deg)', offset: 0},
     {transform: 'rotate(' + mDegLast + 'deg)', offset: 1},
 ],{
     duration: 3600000,
