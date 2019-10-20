@@ -1,18 +1,21 @@
 console.log("Hello Guinea Pig");
 
-let clockS = document.getElementById('clockSeconds');
-let clockM = document.getElementById('clockMinutes');
-let clockH = document.getElementById('clockHours');
+let warsawS = document.getElementById('warsawSeconds');
+let warsawM = document.getElementById('warsawMinutes');
+let warsawH = document.getElementById('warsawHours');
+let nyS = document.getElementById('nySeconds');
+let nyM = document.getElementById('nyMinutes');
+let nyH = document.getElementById('nyHours');
+let loS = document.getElementById('loSeconds');
+let loM = document.getElementById('loMinutes');
+let loH = document.getElementById('loHours');
+let toS = document.getElementById('toSeconds');
+let toM = document.getElementById('toMinutes');
+let toH = document.getElementById('toHours');
 let time = new Date();
 let second = time.getSeconds();
 let minute = time.getMinutes();
 let hour = time.getHours();
-let sDegFirst = second*6;
-let sDegLast = sDegFirst + 360;
-let mDegFirst = minute*6 + second*6/60;
-let mDegLast = mDegFirst + 360;
-let hDegFirst = hour*30 + minute*6/12 + second*6/60/12;
-let hDegLast = hDegFirst + 360;
 
 let secondsFunc = () => {
     time = new Date();
@@ -21,47 +24,26 @@ let secondsFunc = () => {
     hour = time.getHours();
     let deg = second*6;
     let degM = minute*6 + second/60*6;
-    let degH = hour*30 + minute*6/12 + second*6/60/12*6;
-    clockS.style.transform = 'rotate(' + deg  + 'deg)';
-    clockM.style.transform = 'rotate(' + degM + 'deg)';
-    clockH.style.transform = 'rotate(' + degH + 'deg)';
+    let warsawDegH = hour*30 + minute*6/12 + second*6/60/12*6;
+    let nyDegH = hour*30 + minute*6/12 + second*6/60/12*6 - 180;
+    let toDegH = hour*30 + minute*6/12 + second*6/60/12*6 + 210;
+    let loDegH = hour*30 + minute*6/12 + second*6/60/12*6 - 30;
+    warsawS.style.transform = 'rotate(' + deg  + 'deg)';
+    nyS.style.transform = 'rotate(' + deg  + 'deg)';
+    loS.style.transform = 'rotate(' + deg  + 'deg)';
+    toS.style.transform = 'rotate(' + deg  + 'deg)';
+    warsawM.style.transform = 'rotate(' + degM + 'deg)';
+    nyM.style.transform = 'rotate(' + degM + 'deg)';
+    loM.style.transform = 'rotate(' + degM + 'deg)';
+    toM.style.transform = 'rotate(' + degM + 'deg)';
+    warsawH.style.transform = 'rotate(' + warsawDegH + 'deg)';
+    nyH.style.transform = 'rotate(' + nyDegH + 'deg)';
+    toH.style.transform = 'rotate(' + toDegH + 'deg)';
+    loH.style.transform = 'rotate(' + loDegH + 'deg)';
 }
 
-setInterval(secondsFunc, 10);
-
-let clockSecondsNY = document.getElementById('clockSecondsNY');
-let clockMinutesNY = document.getElementById('clockMinutesNY');
-let clockHoursNY = document.getElementById('clockHoursNY');
 
 
-clockSecondsNY.animate([
-    {transform: 'rotate(' + sDegFirst + 'deg)', offset: 0},
-    {transform: 'rotate(' + sDegLast + 'deg)', offset: 1},
-], {
-    duration: 60000,
-    easing: 'linear',
-    iterations: Infinity,
-    direction: 'normal',
-});
-
-clockMinutesNY.animate([
-    {transform: 'rotate(' + mDegFirst + 'deg)', offset: 0},
-    {transform: 'rotate(' + mDegLast + 'deg)', offset: 1},
-],{
-    duration: 3600000,
-    easing: 'linear',
-    iterations: Infinity,
-    direction: 'normal',
-})
-
-clockHoursNY.animate([
-    {transform: 'rotate(' + hDegFirst + 'deg)', offset: 0},
-    {transform: 'rotate(' + hDegLast + 'deg)', offset: 1},
-],{
-    duration: 43200000,
-    easing: 'linear',
-    iterations: Infinity,
-    direction: 'normal',
-})
+setInterval(secondsFunc, 1000);
 
 

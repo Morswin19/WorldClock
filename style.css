@@ -14,18 +14,29 @@ body {
   z-index: 1;
 }
 
-.tl200 {
+.tlWA {
   top: 200px;
   left: 200px;
 }
 
-.tl1400 {
+.tlNY {
   top: 200px;
-  left: 900px;
+  left: 500px;
+}
+
+.tlTO {
+  top: 200px;
+  left: 1100px;
+}
+
+.tlLO {
+  top: 200px;
+  left: 800px;
 }
 
 .city {
   position: relative;
+  margin: auto;
 }
 
 .clock {
@@ -33,6 +44,23 @@ body {
 }
 
 img {
-  height: 500px;
+  height: 200px;
+}
+
+.name {
+  position: absolute;
+  font-size: 30px;
+  width: 200px;
+  text-align: center;
+}
+
+.nameTop {
+  top: 150px;
+}
+
+#main {
+  margin: auto;
+  position: relative;
+  width: 1400px;
 }
 /*# sourceMappingURL=style.css.map */
