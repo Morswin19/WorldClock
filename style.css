@@ -33,6 +33,10 @@ header h1 {
   z-index: 3;
 }
 
+.zindex4 {
+  z-index: 4;
+}
+
 .zindex1 {
   z-index: 1;
 }
