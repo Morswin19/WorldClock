@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>The World Clock</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
 <body onload="secondsFunc()">
@@ -13,6 +14,12 @@
         <h1>WORLD CLOCK</h1>
     </header>
     <div id = "main">
+        <div id = 'mapKey'>
+            <div><img class = 'small' src="./img/Face2.png" alt=""></div>
+            <div class = 'white'>a.m.</div>
+            <div><img class = 'small' src="./img/Face1.png" alt=""></div>
+            <div>p.m.</div>
+        </div>
         <div id = "warsawClock" class = "city">
             <div class = 'name nameTop' style = "left: px">WARSAW</div>
             <div id = 'warsawSeconds' class = 'tlWA clock zindex1'>

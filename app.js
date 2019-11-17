@@ -30,7 +30,7 @@ let secondsFunc = () => {
     let degM = minute*6 + second/60*6;
     let warsawDegH = hour*30 + minute*6/12 + second*6/60/12*6;
     let nyDegH = hour*30 + minute*6/12 + second*6/60/12*6 - 180;
-    let toDegH = hour*30 + minute*6/12 + second*6/60/12*6 + 210;
+    let toDegH = hour*30 + minute*6/12 + second*6/60/12*6 + 240;
     let loDegH = hour*30 + minute*6/12 + second*6/60/12*6 - 30;
     warsawS.style.transform = 'rotate(' + deg  + 'deg)';
     nyS.style.transform = 'rotate(' + deg  + 'deg)';

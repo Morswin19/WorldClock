@@ -6,6 +6,7 @@
   font-size: 30px;
   font-family: 'Lato', sans-serif;
   color: #3C4245;
+  cursor: default;
 }
 
 body {
@@ -20,7 +21,7 @@ header {
 }
 
 header h1 {
-  padding: 1em;
+  padding: 1.4em;
   font-size: 2em;
   color: white;
 }
@@ -42,28 +43,28 @@ header h1 {
 }
 
 .tlWA {
-  top: 150px;
+  top: 100px;
   left: 0px;
   width: 200px;
   height: 200px;
 }
 
 .tlNY {
-  top: 150px;
+  top: 100px;
   left: 300px;
   width: 200px;
   height: 200px;
 }
 
 .tlTO {
-  top: 150px;
+  top: 100px;
   left: 900px;
   width: 200px;
   height: 200px;
 }
 
 .tlLO {
-  top: 150px;
+  top: 100px;
   left: 600px;
   width: 200px;
   height: 200px;
@@ -80,6 +81,8 @@ header h1 {
 
 img {
   height: 200px;
+  display: inline-block;
+  vertical-align: center;
 }
 
 .name {
@@ -92,12 +95,40 @@ img {
 }
 
 .nameTop {
-  top: 100px;
+  top: 50px;
+}
+
+.small {
+  height: 50px;
+  margin-left: 20px;
 }
 
 #main {
   margin: auto;
   position: relative;
   width: 1100px;
+}
+
+#mapKey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+#mapKey div {
+  height: 50px;
+  margin: 10px;
+}
+
+.white {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
